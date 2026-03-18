@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สั่งเบอร์เกอร์</title>
+  </head>
+  <body>
+    <h1>สั่งเบอร์เกอร์</h1>
+    <div>
+      <label for="name">ชื่อผู้สั่ง</label><br />
+      <form action="/submit-name" method="post">
+        <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" />
+        <br />
+        <br />
+      </form>
+    </div>
+
+    <div>
+      <label for="menu">เลือกเมนู</label><br />
+      <select id="menu" name="menu">
+        <option value="pork">กระเพราชีสหมู</option>
+        <option value="beef">พะแนงเนื้อ</option>
+        <option value="chicken">ไก่กรอบ</option>
+      </select>
+      <br />
+      <br />
+    </div>
+
+    <div>
+      <label>ระดับความเผ็ด</label><br />
+      <input type="radio" name="spice" value="mild" /> ไม่เผ็ด
+      <input type="radio" name="spice" value="medium" /> เผ็ดกลาง
+      <input type="radio" name="spice" value="hot" /> เผ็ด
+      <br />
+      <br />
+    </div>
+
+    <div>
+      <label>เลือกของเพิ่มเติม</label><br />
+      <input type="checkbox" name="extra" value="cheese" />ชีส
+      <input type="checkbox" name="extra" value="egg" />ไข่ดาว
+      <input type="checkbox" name="extra" value="vegetable" />ผัก
+      <br />
+      <br />
+    </div>
+
+    <div>
+      <label for="name">เครื่องดื่ม (กรอกชื่อเครื่องดื่มที่ต้องการ)</label
+      ><br />
+      <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" />
+        <br />
+        <br />
+        <button type="submit">สั่งอาหาร</button>
+        <br />
+        <button type="reset">ล้างข้อมูล</button>
+      </form>
+    </div>
+  </body>
+</html>

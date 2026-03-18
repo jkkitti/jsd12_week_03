@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>สั่งข้าวผัดกระเพรา</title>
+  </head>
+  <body>
+    <h1>🍳 สั่งข้าวผัดกระเพรา</h1>
+
+    <form action="#" method="post">
+      <!-- ช่องกรอกชื่อ -->
+      <label for="name">ชื่อผู้สั่ง:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="ชื่อของคุณ"
+      /><br /><br />
+
+      <!-- เลือกโปรตีน -->
+      <label for="protein">เลือกโปรตีน:</label><br />
+      <select id="protein" name="protein">
+        <option value="chicken">ไก่</option>
+        <option value="pork">หมู</option>
+        <option value="beef">เนื้อ</option></select
+      ><br /><br />
+
+      <!-- ระดับความเผ็ด (radio) -->
+      <label>ระดับความเผ็ด:</label><br />
+      <input type="radio" name="spice" value="mild" /> ไม่เผ็ด
+      <input type="radio" name="spice" value="medium" /> เผ็ดน้อย
+      <input type="radio" name="spice" value="hot" /> เผ็ด<br /><br />
+
+      <!-- ตัวเลือกเพิ่มเติม (checkbox) -->
+      <label>เพิ่มเติม:</label><br />
+      <input type="checkbox" name="extra" value="egg" /> ไข่ดาว
+      <input type="checkbox" name="extra" value="basil" />
+      กระเพราเพิ่ม<br /><br />
+
+      <!-- จำนวน -->
+      <label for="quantity">จำนวน:</label><br />
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        value="1"
+        min="1"
+        max="10"
+      /><br /><br />
+
+      <!-- หมายเหตุ -->
+      <label for="note">หมายเหตุ:</label><br />
+      <textarea
+        id="note"
+        name="note"
+        rows="3"
+        cols="30"
+        placeholder="เช่น ไม่ใส่หัวหอม"
+      ></textarea
+      ><br /><br />
+
+      <!-- ปุ่ม -->
+      <button type="submit">สั่งอาหาร</button>
+      <button type="reset">ล้างข้อมูล</button>
+    </form>
+  </body>
+</html>
