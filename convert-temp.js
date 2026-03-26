@@ -1,3 +1,5 @@
+// โปรแกรมแปลงอุณหภูมิระหว่างเซลเซียสและฟาเรนไฮต์
+
 import readline from "readline";
 
 // Camel case -> celsiusToFahrenheit -> JS functions
